@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,100&display=swap");
+:root {
+  --bg-y: #ffa31a;
+  --not: #808080;
+  --bg: #292929;
+  --border: #1b1b1b;
+  --txt: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Sarabun", sans-serif;
+  cursor: default;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--txt);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.flexcol {
+  flex-direction: column;
+}
+
+.none {
+  display: none !important;
+}
+
+.Navsetting {
+  justify-content: space-between;
+  background-color: var(--bg-y);
+  width: 20vw;
+  height: 100vh;
+  padding: 2vh 10vh;
+}
+
+.buttonheadNav {
+  font-size: 200%;
+  background-color: var(--bg-y);
+  width: 10vw;
+  height: 10vh;
+  transition: 0.5s ease-in;
+}
+.buttonheadNav:hover {
+  scale: 1.01;
+  transition: 0.5s ease-in;
+}
+.buttonMode {
+  position: relative;
+  width: 10vw;
+  height: 10vh;
+  font-size: 100%;
+  color: var(--txt);
+}
+.boxmode {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s ease-in;
+}
+.boxmode:hover {
+  scale: 1.05;
+  transition: 0.5s ease-in;
+}
+.boxmode::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.CM {
+  background-image: url("img/thempeopur.jpg");
+}
+.SM {
+  background-image: url("img/thempeopleblue.jpg");
+}
+.UM {
+  background-image: url("img/peopleyellow.jpg");
+}
+
+#hard,
+#hardstart {
+  background-color: #d62d20;
+}
+#inter,
+#interstart {
+  background-color: #0057e7;
+}
+#easy,
+#easystart {
+  background-color: #008744;
+}
+
+.buttonLevel {
+  font-size: 130%;
+  transition: 0.5s ease-in;
+}
+
+.buttonLevel:hover {
+  scale: 1.05;
+  transition: 0.5s ease-in;
+}
+
+.bloxlabel {
+  background-color: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 15vh;
+  font-size: 120%;
+  padding: 2vh;
+}
+
+.artistNav {
+  text-align: center;
+  font-size: 150%;
+  padding: 2vh;
+  height: 10vh;
+  width: 20vw;
+}
+
+button,
+input {
+  outline: none;
+}
+
+.center {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.modelevel {
+  background-color: var(--bg-y);
+  color: var(--bg);
+  width: 60vw;
+  height: 15vh;
+  font-size: xx-large;
+}
+
+.top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.bottom {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.btncontrolstart {
+  width: 20vw;
+  height: 20vh;
+}
+
+.labelstart {
+  background: var(--bg);
+  height: 10vh;
+  width: 60vw;
+  font-size: x-large;
+}
+.input-music-start {
+  text-align: center;
+  width: 60vw;
+  height: 5vh;
+  font-size: x-large;
+}
+
+#form button {
+  border-radius: 10px;
+  background-color: var(--bg-y);
+  height: 5vh;
+  width: 20vh;
+  margin-top: 2vh;
+}
+
+.forX {
+  height: 5vh !important;
+  width: 2.5vw !important;
+}
+
+.bg-button {
+  background: var(--bg-y);
+}
+
+.forsave {
+  font-size: large;
+}
+
+.fadeleft {
+  transform: translateX(-20vw);
+  transition: 0.5s ease-in;
+}
+
+.nav {
+  transform: translateX(0vw);
+  transition: 0.5s ease-in;
+}
+
+.selectModeLevel {
+  opacity: 0.6;
+  margin: 2vh 0px;
+  border: 1px solid var(--bg-y);
+}

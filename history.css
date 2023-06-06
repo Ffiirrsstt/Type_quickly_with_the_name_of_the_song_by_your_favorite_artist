@@ -1,0 +1,78 @@
+:root {
+  --bg-y: #ffa31a;
+  --not: #808080;
+  --bg: #292929;
+  --border: rgba(0, 0, 0, 0.2);
+  --txt: white;
+}
+.historycontent {
+  width: 100vw;
+  height: 60vh;
+}
+.btnhistory {
+  background-color: var(--border);
+  padding-left: 1vw;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+#openwordhistory,
+#Clear {
+  border-right: 1px solid white;
+}
+
+.wordhisandClear {
+  color: white;
+  background: transparent;
+  font-size: x-large;
+  border: 0px;
+  height: 100%;
+  width: 15vw;
+}
+.wordhisandClear:hover {
+  transform: translateY(3px);
+  border: 1px solid white;
+  transition: 0.5s all ease-in;
+}
+
+#inputprint {
+  flex: 1;
+  height: 15vh;
+  font-size: x-large;
+  padding: 0px 5vw;
+}
+
+#reset {
+  height: 14vh;
+  background-color: var(--bg-y);
+  transition: 0.5s all ease-in;
+}
+
+.setting {
+  background-color: transparent;
+  width: 3vw;
+  height: 80%;
+  border: 0px;
+  transition: 0.5s all ease-in;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.detail:hover {
+  background: var(--bg);
+  overflow: auto;
+  color: var(--txt);
+  transition: 0.5s all ease-in;
+}
+
+.detail {
+  flex: 1;
+  font-size: larger;
+  color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  transition: 0.5s all ease-in;
+}
